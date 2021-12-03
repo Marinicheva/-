@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+}
+  
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 35%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.sidebar-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(59, 57, 57);
+}
+
+.sidebar-card__summer {
+  background: linear-gradient(225deg, rgb(255, 255, 255) 2%, rgb(72, 230, 234) 19%, rgb(11, 159, 159) 73%);
+}
+
+.sidebar-card__autumn {
+  background: linear-gradient(225deg, rgb(255, 255, 255) 1%, rgb(242, 195, 16) 31%, rgb(231, 92, 0) 84%);
+}
+
+.sidebar-card__winter {
+  background: linear-gradient(225deg, rgb(255, 255, 255) 1%, rgb(165, 217, 215) 43%, rgb(147, 165, 165) 87%);
+}
+
+.sidebar-card__spring {
+  background: linear-gradient(225deg, rgb(255, 255, 255) 1%, rgb(77, 204, 38) 43%, rgb(12, 152, 16) 87%);
+}
+
+.sidebar-card__title {
+  font-size: 42px;
+}
+
+.sidebar-card__text {
+  font-size: 20px;
+}
+
+.slider {
+  position: absolute;
+  top: 0%;
+  left: 35%;
+  width: 65%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-card {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-card__spring {
+  background-image: url('https://cdn.pixabay.com/photo/2018/01/06/01/01/oak-3064187_960_720.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.slider-card__winter {
+  background-image: url('https://cdn.pixabay.com/photo/2019/12/02/16/37/snow-4668099_960_720.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.slider-card__autumn {
+  background-image: url('https://cdn.pixabay.com/photo/2014/12/08/02/59/benches-560435_960_720.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.slider-card__summer {
+  background-image: url('https://cdn.pixabay.com/photo/2016/11/22/07/26/indiana-dunes-state-park-1848559_960_720.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.controls{
+  position: absolute;
+  left: 35%;
+  top: 50%;
+}
+
+.control__btn {
+  background-color: #fff;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+}
+
+.control__btn:hover {
+  color: #222;
+}
+
+.control__btn:focus {
+  outline: none;
+}
+
+.btn-up {
+  transform: translateX(-110%) translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+.btn-down {
+  transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
